@@ -41,3 +41,4 @@ class CashRegister
       "#{self.total}"
     end
   end
+end
