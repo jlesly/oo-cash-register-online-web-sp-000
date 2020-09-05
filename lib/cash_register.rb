@@ -34,6 +34,11 @@ class CashRegister
   end
 
   def void_last_transaction
-    self.total = @total - @transactions.pop
+    if @items == 0 
+      "0.0"
+    else 
+      self.total = @total - @transactions.pop
+      "#{self.total}"
+    end
   end
 end
